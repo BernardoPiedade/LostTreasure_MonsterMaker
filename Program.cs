@@ -4,6 +4,18 @@ using System.IO;
 using System.Collections;
 using System.Threading.Tasks;
 
+
+
+/*
+ * 
+ *  for now it's just a template
+ *  i'll still add the questions for the name, description and level.
+ *  after that, the algorithm will determine the rest of the monster stats depending on the level given.
+ * 
+ */
+
+
+
 namespace LostTreasure_MonsterMaker
 {
     class Program
@@ -11,7 +23,7 @@ namespace LostTreasure_MonsterMaker
         static async Task Main(string[] args)
         {
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
-            var file = new FileInfo("monsters.xlsx");
+            var file = new FileInfo("\\output\\monsters.xlsx");
 
             var monster = GetMonsterModels();
 
